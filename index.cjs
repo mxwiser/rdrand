@@ -1,6 +1,7 @@
 const koffi = require('koffi');
 const path = require('path');
-const libPath = path.resolve(__dirname, 'librdrand.so'); 
+
+const libPath = path.resolve(__dirname, 'librdrand.'+(process.platform=='win32')?'dll':'so'); 
 const lib = koffi.load(libPath);
 
 module.exports.isRrdrandSupported= lib.func('int is_rdrand_supported()');

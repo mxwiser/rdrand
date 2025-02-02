@@ -1,6 +1,6 @@
 {
   "name": "rdrand-lite",
-  "version": "1.4.6",
+  "version": "1.4.8",
   "description": "Intel Ivy Bridge RDRAND",
   "main": "index.cjs",
   "types": "index.d.ts",
@@ -11,7 +11,8 @@
   "keywords": [
     "rdrand",
     "rdseek",
-    "trng"
+    "trng",
+    "rand"
   ],
   "license": "MIT",
   "dependencies": {

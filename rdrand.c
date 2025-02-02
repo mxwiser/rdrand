@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
+
+//build: gcc -shared  -o librdrand.so rdrand.c
 int is_rdrand_supported() {
     uint32_t eax, ebx, ecx, edx;
     eax = 1;

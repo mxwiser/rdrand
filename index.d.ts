@@ -1,4 +1,4 @@
-declare module 'index' {
+declare module 'rdrand-lite' {
     /**
      * Checks if the CPU supports the RDRAND instruction.
      * @returns 1 if supported, 0 if not supported

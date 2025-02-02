@@ -1,13 +1,6 @@
 {
-
-  "dependencies": {
-    "ffi-napi": "^2.0.3"
-  },
-
-
-
   "name": "rdrand-lite",
-  "version": "1.4.41",
+  "version": "1.4.5",
   "description": "Intel Ivy Bridge RDRAND",
   "main": "index.cjs",
   "types": "index.d.ts",
@@ -20,6 +13,8 @@
     "rdseek",
     "trng"
   ],
-  "license": "MIT"
-
+  "license": "MIT",
+  "dependencies": {
+    "koffi": "^2.10.1"
+  }
 }

@@ -5,7 +5,7 @@ You can generate a good-random numbers without any external, expensive hardware.
 This NPM module enables you to use those instructions from Node.js,
 applicable for simulation, analysis, games, or anything you want.
 
-- Out of the box : No need to install additional build tools
+- Out of the box : No need to install additional build tools.
 ## API
 
 ```typescript
@@ -14,12 +14,12 @@ const rng = require('rdrand-lite');
 
 //and then
 
-console.log(rd.rdRand32())
-console.log(rd.rdRand64())
-console.log(rd.rdSeed32())
-console.log(rd.rdSeed64())
-console.log(rd.normalizeUint32(rd.rdSeed32()))
-console.log(rd.normalizeUint64(rd.rdSeed64()))
+console.log(rng.rdRand32())
+console.log(rng.rdRand64())
+console.log(rng.rdSeed32())
+console.log(rng.rdSeed64())
+console.log(rng.normalizeUint32(rng.rdSeed32()))
+console.log(rng.normalizeUint64(rng.rdSeed64()))
 
 
 ```

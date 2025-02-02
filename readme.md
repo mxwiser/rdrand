@@ -1,21 +1,16 @@
-# drng.js
+# rdrand-lite.js
 
-
-
-The recent Intel CPU has a TRNG instructions called RDRAND/RDSEED.
+The Intel CPU has a TRNG instructions called RDRAND/RDSEED.
 You can generate a good-random numbers without any external, expensive hardware.
 This NPM module enables you to use those instructions from Node.js,
 applicable for simulation, analysis, games, or anything you want.
 
+- Out of the box : No need to install additional build tools
 ## API
 
 ```typescript
 // node.js
 const rng = require('rdrand-lite');
-
-// typescript
-import * as rng from 'rdrand-lite';
-
 
 //and then
 

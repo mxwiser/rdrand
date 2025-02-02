@@ -1,0 +1,54 @@
+# drng.js
+
+
+
+The recent Intel CPU has a TRNG instructions called RDRAND/RDSEED.
+You can generate a good-random numbers without any external, expensive hardware.
+This NPM module enables you to use those instructions from Node.js,
+applicable for simulation, analysis, games, or anything you want.
+
+## API
+
+```typescript
+// node.js
+const rng = require('rdrand-lite');
+
+// typescript
+import * as rng from 'rdrand-lite';
+
+
+//and then
+
+console.log(rd.rdRand32())
+console.log(rd.rdRand64())
+console.log(rd.rdSeed32())
+console.log(rd.rdSeed64())
+console.log(rd.normalizeUint32(rd.rdSeed32()))
+console.log(rd.normalizeUint64(rd.rdSeed64()))
+
+
+```
+
+### Basic API
+
+- `rng.isRrdrandSupported(): number` - If 1 is returned, it indicates support for rdrand.
+- `rng.rdRand32(): uint32` - returns uint32; ramdom binary bits by rdrand.
+- `rng.rdRand64(): uint64` - returns uint64; ramdom binary bits by rdrand.
+- `rng.rdSeed32(): uint32` - returns uint32; ramdom binary bits by rdseek.
+- `rng.rdSeed64(): uint64` - returns uint64; ramdom binary bits by rdseek.
+- `rng.normalizeUint32(uint32): number` - returns [0, 1] .
+- `rng.normalizeUint64(uint64): number` - returns [0, 1] .
+
+### What is the difference between RDSeed and RDrand:
+- A pseudorandom generator that's periodically seeded from that noise source, whose output is available through the RDRAND instruction;
+- A true random generator that's driven off the noise source, whose output is available through the RDSEED instruction.
+
+
+
+
+
+
+
+
+
+

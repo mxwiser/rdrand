@@ -1,0 +1,25 @@
+{
+
+  "dependencies": {
+    "ffi-napi": "^4.0.3"
+  },
+
+
+
+  "name": "rdrand-lite",
+  "version": "1.4.2",
+  "description": "Intel Ivy Bridge RDRAND",
+  "main": "index.cjs",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/你的用户名/仓库名.git"
+  },
+  "keywords": [
+    "rdrand",
+    "rdseek",
+    "trng"
+  ],
+  "license": "MIT"
+
+}

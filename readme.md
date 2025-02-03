@@ -34,7 +34,7 @@ console.log(rng.normalizeUint64(rng.rdSeed64()))
 - `rng.normalizeUint32(uint32): number` - returns [0, 1] .
 - `rng.normalizeUint64(uint64): number` - returns [0, 1] .
 
-### What is the difference between RDSeed and RDrand:
+### What is the difference between RDSeed and RDRand:
 - A pseudorandom generator that's periodically seeded from that noise source, whose output is available through the RDRAND instruction;
 - A true random generator that's driven off the noise source, whose output is available through the RDSEED instruction.
 

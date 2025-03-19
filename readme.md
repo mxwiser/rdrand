@@ -6,6 +6,7 @@ This NPM module enables you to use those instructions from Node.js,
 applicable for simulation, analysis, games, or anything you want.
 
 - Out of the box : No need to install additional build tools.
+- Windows/Linux.
 ## API
 
 ```typescript

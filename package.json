@@ -1,6 +1,6 @@
 {
   "name": "rdrand-lite",
-  "version": "1.4.11",
+  "version": "1.4.12",
   "description": "Intel Ivy Bridge RDRAND",
   "main": "index.cjs",
   "types": "index.d.ts",
